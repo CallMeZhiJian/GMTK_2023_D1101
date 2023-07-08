@@ -46,7 +46,7 @@ public class DragNShoot : MonoBehaviour
             currentPoint.z = 15;
             tl.RenderLine(startPoint, currentPoint);
 
-            Vector3 vec3 = -(Input.mousePosition - screenPos);
+            Vector3 vec3 = Input.mousePosition - screenPos;
             float angle = Mathf.Atan2(vec3.y, vec3.x) * Mathf.Rad2Deg;
             transform.eulerAngles = new Vector3(0, 0, angle);
         }
