@@ -67,7 +67,6 @@ public class DragNShoot : MonoBehaviour
     {
         if (collision.CompareTag("Enemy"))
         {
-            Debug.Log("SlowDown");
             timeManager.DoSlowMo();
             Destroy(collision.gameObject);
         }
