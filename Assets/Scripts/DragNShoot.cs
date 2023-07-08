@@ -29,8 +29,10 @@ public class DragNShoot : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            playerRb.velocity = new Vector2(0f, 0f);
             startPoint = cam.ScreenToWorldPoint(Input.mousePosition);
             startPoint.z = 15;
+            timeManager.DoSlowMo();
         }
 
         if (Input.GetMouseButton(0))

@@ -1,0 +1,927 @@
+fileFormatVersion: 2
+guid: ecf5a3f08233c134d80fb2024bcdcc0a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Wizard_die-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1068.8334
+        width: 71.333336
+        height: 97.166664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a11b49ff2cb2646478becf77ed91a4dc
+      internalID: -1037948235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard_die-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 1068.8334
+        width: 71.333336
+        height: 97.166664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1a19bae0bb6c624faddac64abbab21f
+      internalID: 417688168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard_die-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 1068.8334
+        width: 71.333336
+        height: 97.166664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb56ef949bc25c946bb0e35b2dbe9752
+      internalID: -650459767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard_die-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 971.8333
+        width: 71.333336
+        height: 97.166664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb3098f429a9c054c8517af97ded46fd
+      internalID: -1507786090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard_die-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 971.8333
+        width: 71.333336
+        height: 97.166664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae69a1c84bb2c504dbd2e4345a4c8fee
+      internalID: -198276702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard_die-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 971.8333
+        width: 71.333336
+        height: 97.166664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f689664d6a1b674abb4c6b720458fe3
+      internalID: 1490360808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard_die-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 874.8333
+        width: 71.333336
+        height: 97.166664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 355a03baec6ed1e4fbfb3c76071d14e5
+      internalID: 377482274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard_die-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 874.8333
+        width: 71.333336
+        height: 97.166664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ff8220bf7945e143ad0325901abd892
+      internalID: -1543448595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard_die-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 874.8333
+        width: 71.333336
+        height: 97.166664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04e9fc53f54bbdb40a5aa27c18d6244e
+      internalID: -553411562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard_die-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 777.8333
+        width: 71.333336
+        height: 97.166664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e81136c03c4f50946a1909251256bb82
+      internalID: 195367626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard_die-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 777.8333
+        width: 71.333336
+        height: 97.166664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c60efe15a844bd45bbd875dcca79d8e
+      internalID: -1410088465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard_die-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 777.8333
+        width: 71.333336
+        height: 97.166664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0127ee8b4f364d24494d822670fee068
+      internalID: 582966343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard_die-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 680.8333
+        width: 71.333336
+        height: 97.166664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bc8f258e96f0e8428809f39ac3726e5
+      internalID: 394473678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard_die-removebg-preview_13
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 680.8333
+        width: 71.333336
+        height: 97.166664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c83ffbf2a8077cd468de5234b707ee2f
+      internalID: 1519998531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard_die-removebg-preview_14
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 680.8333
+        width: 71.333336
+        height: 97.166664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0c100642ff4c6744bf41309f5487348
+      internalID: 1128194282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard_die-removebg-preview_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 583.8333
+        width: 71.333336
+        height: 97.166664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33f8dea162dded048b6b20186e1629b2
+      internalID: -1815649561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard_die-removebg-preview_16
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 583.8333
+        width: 71.333336
+        height: 97.166664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00838b60bf3d68847837b8c40f62b7c5
+      internalID: -885031256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard_die-removebg-preview_17
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 583.8333
+        width: 71.333336
+        height: 97.166664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2745bd25e9f99e94fa707c97f2f67713
+      internalID: -1747319488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard_die-removebg-preview_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 486.83334
+        width: 71.333336
+        height: 97.166664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36a757785e1b85d4082251c6a1cbbf75
+      internalID: 95981608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard_die-removebg-preview_19
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 486.83334
+        width: 71.333336
+        height: 97.166664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 641a6659c9106104db45e76866c2311c
+      internalID: -1322300019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard_die-removebg-preview_20
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 486.83334
+        width: 71.333336
+        height: 97.166664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a522b19eae0354419962853397c1308
+      internalID: 627580430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard_die-removebg-preview_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 389.83334
+        width: 71.333336
+        height: 97.166664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 096fd6ba1517ac74084ddc2f5ff67cf2
+      internalID: 1989019356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard_die-removebg-preview_22
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 389.83334
+        width: 71.333336
+        height: 97.166664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c325409278fdadc45b19d5982864b7ec
+      internalID: -1367025296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard_die-removebg-preview_23
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 389.83334
+        width: 71.333336
+        height: 97.166664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f5d8ec0b6ab4d74ca836470cf97a6ee
+      internalID: 1250857504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard_die-removebg-preview_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 292.83334
+        width: 71.333336
+        height: 97.166664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae4ddeb8cc9e3cc4fb5a7e5690830586
+      internalID: 1277607004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard_die-removebg-preview_25
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 292.83334
+        width: 71.333336
+        height: 97.166664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b05250e2f4b5cd14ab44b739c1d4a3ce
+      internalID: -960937298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard_die-removebg-preview_26
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 292.83334
+        width: 71.333336
+        height: 97.166664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dbcf8f477cb596418828d30a60c3c15
+      internalID: 1164730416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard_die-removebg-preview_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 195.83334
+        width: 71.333336
+        height: 97.166664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f613e06b27d45224b8e70e645fe41987
+      internalID: 550767595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard_die-removebg-preview_28
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 195.83334
+        width: 71.333336
+        height: 97.166664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 907125e9e7484b1408b1570a5ae139ed
+      internalID: -2145865242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard_die-removebg-preview_29
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 195.83334
+        width: 71.333336
+        height: 97.166664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2944faea96b6ec3449947febe8b958bb
+      internalID: -636057447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard_die-removebg-preview_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 98.833336
+        width: 71.333336
+        height: 97.166664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7331e3270a2fb94a9c6fdee29fe3062
+      internalID: 1166222526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard_die-removebg-preview_31
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 98.833336
+        width: 71.333336
+        height: 97.166664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4044070ea5bfa8d4ea264aca0dbd3e76
+      internalID: -2117436408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard_die-removebg-preview_32
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 98.833336
+        width: 71.333336
+        height: 97.166664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 213581189b165dc439a119a4bf1678e2
+      internalID: 1087177007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard_die-removebg-preview_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.8333359
+        width: 71.333336
+        height: 97.166664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24107a2a854a6174ba2fb8f631833f0e
+      internalID: -2118105490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard_die-removebg-preview_34
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 1.8333359
+        width: 71.333336
+        height: 97.166664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16ac79826a31d1b499abe6b6d5636383
+      internalID: -370202109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard_die-removebg-preview_35
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 1.8333359
+        width: 71.333336
+        height: 97.166664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d2946c52a9721a44a03b417e56e319f
+      internalID: 705345165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Wizard_die-removebg-preview_14: 1128194282
+      Wizard_die-removebg-preview_17: -1747319488
+      Wizard_die-removebg-preview_13: 1519998531
+      Wizard_die-removebg-preview_15: -1815649561
+      Wizard_die-removebg-preview_27: 550767595
+      Wizard_die-removebg-preview_10: -1410088465
+      Wizard_die-removebg-preview_30: 1166222526
+      Wizard_die-removebg-preview_5: 1490360808
+      Wizard_die-removebg-preview_33: -2118105490
+      Wizard_die-removebg-preview_0: -1037948235
+      Wizard_die-removebg-preview_8: -553411562
+      Wizard_die-removebg-preview_18: 95981608
+      Wizard_die-removebg-preview_12: 394473678
+      Wizard_die-removebg-preview_20: 627580430
+      Wizard_die-removebg-preview_1: 417688168
+      Wizard_die-removebg-preview_23: 1250857504
+      Wizard_die-removebg-preview_9: 195367626
+      Wizard_die-removebg-preview_11: 582966343
+      Wizard_die-removebg-preview_6: 377482274
+      Wizard_die-removebg-preview_34: -370202109
+      Wizard_die-removebg-preview_28: -2145865242
+      Wizard_die-removebg-preview_3: -1507786090
+      Wizard_die-removebg-preview_29: -636057447
+      Wizard_die-removebg-preview_35: 705345165
+      Wizard_die-removebg-preview_4: -198276702
+      Wizard_die-removebg-preview_2: -650459767
+      Wizard_die-removebg-preview_25: -960937298
+      Wizard_die-removebg-preview_22: -1367025296
+      Wizard_die-removebg-preview_19: -1322300019
+      Wizard_die-removebg-preview_32: 1087177007
+      Wizard_die-removebg-preview_7: -1543448595
+      Wizard_die-removebg-preview_31: -2117436408
+      Wizard_die-removebg-preview_21: 1989019356
+      Wizard_die-removebg-preview_24: 1277607004
+      Wizard_die-removebg-preview_26: 1164730416
+      Wizard_die-removebg-preview_16: -885031256
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
