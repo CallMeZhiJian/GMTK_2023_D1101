@@ -38,7 +38,7 @@ public class HealthControl : MonoBehaviour
         UpdateHealth();
         if (currentHealth <= 0)
         {
-            gameObject.SetActive(false);
+            Destroy(gameObject);
         }
        
         
