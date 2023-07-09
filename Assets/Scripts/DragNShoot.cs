@@ -61,6 +61,8 @@ public class DragNShoot : MonoBehaviour
 
             tl.EndLine();
         }
+
+        playerTrans.localScale = new Vector3(playerTrans.localScale.x - (1 / FindObjectOfType<Attack>().duration), playerTrans.localScale.y - (1 / FindObjectOfType<Attack>().duration), playerTrans.localScale.z - (1 / FindObjectOfType<Attack>().duration));
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
