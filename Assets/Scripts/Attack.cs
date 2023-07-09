@@ -15,7 +15,7 @@ public class Attack : MonoBehaviour
 
     [SerializeField] private AudioClip FireballCreateSFX;
     [SerializeField] private AudioClip FireballDisapearSFX;
-    private void Start()
+    private void Awake()
     {
         onScreen = false;
         vcam = FindObjectOfType<CinemachineVirtualCamera>();
@@ -24,29 +24,26 @@ public class Attack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(1))
+        Debug.Log(onScreen);
+        if (Input.GetMouseButtonDown(1))
         {
             if (!onScreen)
             {
-                SoundManager.instance.PlaySound(FireballCreateSFX);
                 clone = Instantiate(bullet, spawnLocation.position, Quaternion.identity);
+                SoundManager.instance.PlaySound(FireballCreateSFX);
                 onScreen = true;
                 vcam.LookAt = clone.transform;
                 vcam.Follow = clone.transform;
-
-            }            
+                StartCoroutine(BulletDuration());
+            }
         }
-        else if(onScreen)
-        {
-            StartCoroutine(BulletDuration());
-            onScreen = false;  
-        } 
     }
 
     IEnumerator BulletDuration()
     {
         yield return new WaitForSeconds(duration);
         Destroy(clone);
+        onScreen = false;
         SoundManager.instance.PlaySound(FireballDisapearSFX);
         vcam.LookAt = transform;
         vcam.Follow = transform;
