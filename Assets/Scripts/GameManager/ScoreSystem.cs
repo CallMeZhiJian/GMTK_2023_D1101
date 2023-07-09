@@ -29,6 +29,6 @@ public class ScoreSystem : MonoBehaviour
     public void Reset()
     {
         PlayerPrefs.DeleteKey("HighScore");
-        highScoreText.text = "0";
+        highScoreText.text = "High Score: 0";
     }
 }

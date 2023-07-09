@@ -21,6 +21,9 @@ public class DragNShoot : MonoBehaviour
 
     private Vector3 screenPos;
 
+    [SerializeField] private AudioClip shootSFX;
+    [SerializeField] private AudioClip hitEnemySFX;
+
     void Awake()
     {
         cam = Camera.main;
@@ -58,17 +61,17 @@ public class DragNShoot : MonoBehaviour
 
             force = new Vector2(Mathf.Clamp(startPoint.x - endPoint.x, minPower.x, maxPower.x), Mathf.Clamp(startPoint.y - endPoint.y, minPower.y, maxPower.y));
             playerRb.AddForce(force * power, ForceMode2D.Impulse);
+            SoundManager.instance.PlaySound(shootSFX);
 
             tl.EndLine();
         }
-
-        playerTrans.localScale = new Vector3(playerTrans.localScale.x - (1 / FindObjectOfType<Attack>().duration), playerTrans.localScale.y - (1 / FindObjectOfType<Attack>().duration), playerTrans.localScale.z - (1 / FindObjectOfType<Attack>().duration));
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Enemy"))
         {
+            SoundManager.instance.PlaySound(hitEnemySFX);
             timeManager.DoSlowMo();
             Destroy(collision.gameObject);
             ScoreSystem.score += 10;

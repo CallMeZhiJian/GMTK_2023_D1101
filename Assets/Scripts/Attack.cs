@@ -13,6 +13,8 @@ public class Attack : MonoBehaviour
     private GameObject clone;
     private CinemachineVirtualCamera vcam;
 
+    [SerializeField] private AudioClip FireballCreateSFX;
+    [SerializeField] private AudioClip FireballDisapearSFX;
     private void Start()
     {
         onScreen = false;
@@ -26,6 +28,7 @@ public class Attack : MonoBehaviour
         {
             if (!onScreen)
             {
+                SoundManager.instance.PlaySound(FireballCreateSFX);
                 clone = Instantiate(bullet, spawnLocation.position, Quaternion.identity);
                 onScreen = true;
                 vcam.LookAt = clone.transform;
@@ -44,6 +47,7 @@ public class Attack : MonoBehaviour
     {
         yield return new WaitForSeconds(duration);
         Destroy(clone);
+        SoundManager.instance.PlaySound(FireballDisapearSFX);
         vcam.LookAt = transform;
         vcam.Follow = transform;
     }

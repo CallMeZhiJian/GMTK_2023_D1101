@@ -250,6 +250,8 @@ MonoBehaviour:
   playerTrans: {fileID: 0}
   minPower: {x: -4, y: -4}
   maxPower: {x: 4, y: 4}
+  shootSFX: {fileID: 8300000, guid: 8f9939fd215e7db4dafea8f8b0c37608, type: 3}
+  hitEnemySFX: {fileID: 8300000, guid: d80f93afa55bc7d47a4496aa693ff164, type: 3}
 --- !u!114 &4152371110625853512
 MonoBehaviour:
   m_ObjectHideFlags: 0

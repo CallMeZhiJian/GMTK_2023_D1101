@@ -8,7 +8,12 @@ public class HealthControl : MonoBehaviour
     public int playerHealth = 3 ;
     public int currentHealth;
 
+    [SerializeField] private AudioClip hurtSFX;
+    [SerializeField] private AudioClip gameOverSFX;
+    [SerializeField] private AudioClip gameOverBGM;
     [SerializeField] private Image[] hearts;
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,11 +39,14 @@ public class HealthControl : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        SoundManager.instance.PlaySound(hurtSFX);
         currentHealth = currentHealth - damage;
         UpdateHealth();
         if (currentHealth <= 0)
         {
             Destroy(gameObject);
+            SoundManager.instance.PlaySound(gameOverSFX);
+            SoundManager.instance.SwitchSound(gameOverBGM);
         }
        
         
