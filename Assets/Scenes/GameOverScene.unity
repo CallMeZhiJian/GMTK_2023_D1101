@@ -17094,6 +17094,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickButtonSFX: {fileID: 8300000, guid: 31055e57a0f57814a95f810af6f23325, type: 3}
+  restartBGM: {fileID: 8300000, guid: 8382f165e2b98ef459963a3baa3e2f1a, type: 3}
 --- !u!224 &872310496
 RectTransform:
   m_ObjectHideFlags: 0
