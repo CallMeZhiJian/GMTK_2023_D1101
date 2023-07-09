@@ -69,6 +69,7 @@ public class DragNShoot : MonoBehaviour
         {
             timeManager.DoSlowMo();
             Destroy(collision.gameObject);
+            ScoreSystem.score += 10;
         }
     }
 }
