@@ -13,10 +13,12 @@ public class EnemyMovement : MonoBehaviour
 
     private Transform target;
     private int pathIndex = 0;
+    private Animator anim;
 
     private void Start()
     {
         target = LevelManager.main.path[pathIndex];
+        anim = GetComponent<Animator>();
     }
 
     private void Update()
@@ -27,11 +29,12 @@ public class EnemyMovement : MonoBehaviour
 
             if (pathIndex >= LevelManager.main.path.Length)
             {
-                Destroy(gameObject);
-                return; 
+                StartCoroutine(DeathAnimation());
+                //Destroy(gameObject);
+                return;
             }
         }
-        
+
     }
 
     private void FixedUpdate()
@@ -41,4 +44,20 @@ public class EnemyMovement : MonoBehaviour
         rb.velocity = direction * moveSpeed;
     }
 
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if(collision.CompareTag("Player"))
+    //    {
+    //        StartCoroutine(DeathAnimation());
+    //    }
+    //}
+
+    IEnumerator DeathAnimation()
+    {
+        anim.SetTrigger("Death");
+        yield return new WaitForSeconds(1);
+        Destroy(gameObject);
+    }
+
+    
 }
