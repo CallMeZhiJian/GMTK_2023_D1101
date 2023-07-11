@@ -13,6 +13,7 @@ public class ScoreSystem : MonoBehaviour
     private void Start()
     {
         highScoreText.text = "High Score: " + PlayerPrefs.GetInt("HighScore", 0);
+        score = 0;
     }
 
     // Update is called once per frame
