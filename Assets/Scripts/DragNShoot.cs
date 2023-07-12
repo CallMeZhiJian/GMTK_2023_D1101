@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DragNShoot : MonoBehaviour
 {
+    public GameObject hitExplosion;
     public float power;
     public Rigidbody2D playerRb;
     public Transform playerTrans;
@@ -12,23 +13,18 @@ public class DragNShoot : MonoBehaviour
     public Vector2 maxPower;
 
     private TrajectoryLine tl;
-    private TimeManager timeManager;
     
     Camera cam;
     Vector2 force;
     Vector3 startPoint;
     Vector3 endPoint;
 
-    private Vector3 screenPos;
-
     [SerializeField] private AudioClip shootSFX;
-    [SerializeField] private AudioClip hitEnemySFX;
 
     void Awake()
     {
         cam = Camera.main;
         tl = GetComponent<TrajectoryLine>();
-        timeManager = FindObjectOfType<TimeManager>();
     }
 
     void Update()
@@ -38,9 +34,6 @@ public class DragNShoot : MonoBehaviour
             playerRb.velocity = new Vector2(0f, 0f);
             startPoint = cam.ScreenToWorldPoint(Input.mousePosition);
             startPoint.z = 15;
-            timeManager.DoSlowMo();
-
-            screenPos = cam.WorldToScreenPoint(transform.position);
         }
 
         if (Input.GetMouseButton(0))
@@ -48,10 +41,6 @@ public class DragNShoot : MonoBehaviour
             Vector3 currentPoint = cam.ScreenToWorldPoint(Input.mousePosition);
             currentPoint.z = 15;
             tl.RenderLine(startPoint, currentPoint);
-
-            Vector3 vec3 = Input.mousePosition - screenPos;
-            float angle = Mathf.Atan2(vec3.y, vec3.x) * Mathf.Rad2Deg;
-            transform.eulerAngles = new Vector3(0, 0, angle);
         }
 
         if (Input.GetMouseButtonUp(0))
@@ -71,10 +60,14 @@ public class DragNShoot : MonoBehaviour
     {
         if (collision.CompareTag("Enemy"))
         {
-            SoundManager.instance.PlaySound(hitEnemySFX);
-            timeManager.DoSlowMo();
-            Destroy(collision.gameObject);
-            ScoreSystem.score += 10;
+            GameObject hitEnemy = Instantiate(hitExplosion, collision.gameObject.transform.position, Quaternion.identity);
+            StartCoroutine(EnemyExplode(hitEnemy));
         }
+    }
+
+    IEnumerator EnemyExplode(GameObject hitEnemy)
+    {
+        yield return new WaitForSeconds(1);
+        Destroy(hitEnemy);
     }
 }

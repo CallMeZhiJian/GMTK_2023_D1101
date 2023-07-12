@@ -6,6 +6,7 @@ using Cinemachine;
 public class Attack : MonoBehaviour
 {
     public GameObject bullet;
+    public GameObject explosion;
     public Transform spawnLocation;
     public float duration;
 
@@ -26,7 +27,6 @@ public class Attack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(onScreen);
         if (Input.GetMouseButtonDown(1))
         {
             if (!onScreen)
@@ -47,15 +47,25 @@ public class Attack : MonoBehaviour
     {
         yield return new WaitForSeconds(duration);
         Destroy(clone);
-        onScreen = false;
-        SoundManager.instance.PlaySound(FireballDisapearSFX);
-        vcam.LookAt = transform;
-        vcam.Follow = transform;
+        StartCoroutine(Explosion());
+        SoundManager.instance.PlaySound(FireballDisapearSFX); 
     }
 
     IEnumerator SpawnAnimation()
     {
         anim.SetTrigger("DoneAction");
         yield return new WaitForSeconds(1);
+    }
+
+    IEnumerator Explosion()
+    {
+        GameObject explo = Instantiate(explosion, clone.transform.position, Quaternion.identity);
+        vcam.LookAt = explo.transform;
+        vcam.Follow = explo.transform;
+        yield return new WaitForSeconds(1);
+        Destroy(explo);
+        onScreen = false;
+        vcam.LookAt = transform;
+        vcam.Follow = transform;
     }
 }

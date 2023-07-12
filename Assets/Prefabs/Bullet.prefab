@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 4152371110625853519}
   m_Layer: 0
   m_Name: Bullet
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -245,11 +245,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c9ec0f500e7d1d43839a017a85d52c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitExplosion: {fileID: 8073410509170869257, guid: c2151660e01cb624fb1172937dd7037d, type: 3}
   power: 2
   playerRb: {fileID: 4152371110625853494}
   playerTrans: {fileID: 0}
-  minPower: {x: -4, y: -4}
-  maxPower: {x: 4, y: 4}
+  minPower: {x: -6, y: -6}
+  maxPower: {x: 6, y: 6}
   shootSFX: {fileID: 8300000, guid: 8f9939fd215e7db4dafea8f8b0c37608, type: 3}
   hitEnemySFX: {fileID: 8300000, guid: d80f93afa55bc7d47a4496aa693ff164, type: 3}
 --- !u!114 &4152371110625853512

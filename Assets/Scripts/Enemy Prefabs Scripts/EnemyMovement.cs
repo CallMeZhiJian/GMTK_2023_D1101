@@ -14,11 +14,16 @@ public class EnemyMovement : MonoBehaviour
     private Transform target;
     private int pathIndex = 0;
     private Animator anim;
+    private bool death;
+
+    private TimeManager timeManager;
+    [SerializeField] private AudioClip hitEnemySFX;
 
     private void Start()
     {
         target = LevelManager.main.path[pathIndex];
         anim = GetComponent<Animator>();
+        timeManager = FindObjectOfType<TimeManager>();
     }
 
     private void Update()
@@ -41,16 +46,27 @@ public class EnemyMovement : MonoBehaviour
     {
         Vector2 direction = (target.position - transform.position).normalized;
 
-        rb.velocity = direction * moveSpeed;
+        if (death)
+        {
+            rb.velocity = new Vector2(0, 0);
+        }
+        else
+        {
+            rb.velocity = direction * moveSpeed;
+        }
     }
 
-    //private void OnTriggerEnter2D(Collider2D collision)
-    //{
-    //    if(collision.CompareTag("Player"))
-    //    {
-    //        StartCoroutine(DeathAnimation());
-    //    }
-    //}
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            death = true;
+            SoundManager.instance.PlaySound(hitEnemySFX);
+            timeManager.DoSlowMo();
+            ScoreSystem.score += 10;
+            StartCoroutine(DeathAnimation());
+        }
+    }
 
     IEnumerator DeathAnimation()
     {
@@ -58,6 +74,4 @@ public class EnemyMovement : MonoBehaviour
         yield return new WaitForSeconds(1);
         Destroy(gameObject);
     }
-
-    
 }
