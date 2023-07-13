@@ -162,6 +162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: -2776626897103531070}
+  bc: {fileID: 1735392554588653803}
   moveSpeed: 2
   hitEnemySFX: {fileID: 8300000, guid: 8178dbe76d40d484b885beacf6cc208c, type: 3}
 --- !u!114 &8093368781239079231

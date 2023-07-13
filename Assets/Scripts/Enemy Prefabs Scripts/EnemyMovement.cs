@@ -7,6 +7,7 @@ public class EnemyMovement : MonoBehaviour
 
     [Header("Reference")]
     [SerializeField] private Rigidbody2D rb;
+    [SerializeField] private BoxCollider2D bc;
 
     [Header("Attributes")]
     [SerializeField] private float moveSpeed = 2f;
@@ -70,6 +71,7 @@ public class EnemyMovement : MonoBehaviour
 
     IEnumerator DeathAnimation()
     {
+        bc.enabled = false;
         anim.SetTrigger("Death");
         yield return new WaitForSeconds(1);
         Destroy(gameObject);
