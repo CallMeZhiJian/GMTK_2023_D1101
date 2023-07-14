@@ -32,4 +32,16 @@ public class SoundManager : MonoBehaviour
         musicSource.clip = clip;
         musicSource.Play();
     }
+
+    public void pauseSound()
+    {
+        musicSource.Pause();
+        effectSource.Pause();
+    }
+
+    public void resumeSound()
+    {
+        musicSource.UnPause();
+        effectSource.UnPause();
+    }
 }

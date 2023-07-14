@@ -10,6 +10,8 @@ public class ScoreSystem : MonoBehaviour
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI highScoreText;
 
+    [SerializeField] private AudioClip clickButtonSFX;
+
     private void Start()
     {
         highScoreText.text = "High Score: " + PlayerPrefs.GetInt("HighScore", 0);
@@ -31,5 +33,6 @@ public class ScoreSystem : MonoBehaviour
     {
         PlayerPrefs.DeleteKey("HighScore");
         highScoreText.text = "High Score: 0";
+        SoundManager.instance.PlaySound(clickButtonSFX);
     }
 }
