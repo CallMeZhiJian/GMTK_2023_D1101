@@ -25,7 +25,6 @@ public class MainMenu : MonoBehaviour
     {
         pausePanel.SetActive(true);
         Time.timeScale = 0;
-        SoundManager.instance.pauseSound();
     }
 
     public void resumeGame()
@@ -33,7 +32,6 @@ public class MainMenu : MonoBehaviour
         pausePanel.SetActive(false);
         Time.timeScale = 1;
         SoundManager.instance.PlaySound(clickButtonSFX);
-        SoundManager.instance.resumeSound();
     }
 
     public void restartGame()

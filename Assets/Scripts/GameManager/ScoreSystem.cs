@@ -25,14 +25,14 @@ public class ScoreSystem : MonoBehaviour
         if(score > PlayerPrefs.GetInt("HighScore", 0))
         {
             PlayerPrefs.SetInt("HighScore", score);
-            highScoreText.text = "High Score: " + score;
-        }    
+            
+        }
+        highScoreText.text = "High Score: " + PlayerPrefs.GetInt("HighScore");
     }
 
     public void Reset()
     {
         PlayerPrefs.DeleteKey("HighScore");
-        highScoreText.text = "High Score: 0";
         SoundManager.instance.PlaySound(clickButtonSFX);
     }
 }
