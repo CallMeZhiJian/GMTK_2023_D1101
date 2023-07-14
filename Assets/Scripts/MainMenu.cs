@@ -45,8 +45,21 @@ public class MainMenu : MonoBehaviour
 
     public void backToMainMenu()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("MainScene");
         SoundManager.instance.PlaySound(clickButtonSFX);
         SoundManager.instance.SwitchSound(BGM);
+    }
+
+    public void clickOption()
+    {
+        SceneManager.LoadScene("OptionScene", LoadSceneMode.Additive);
+        SoundManager.instance.PlaySound(clickButtonSFX);
+    }
+
+    public void backButton()
+    {
+        SceneManager.UnloadSceneAsync("OptionScene");
+        SoundManager.instance.PlaySound(clickButtonSFX);
     }
 }

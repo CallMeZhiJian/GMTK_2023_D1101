@@ -8068,7 +8068,7 @@ RectTransform:
   m_Children:
   - {fileID: 848278759}
   m_Father: {fileID: 1133552965}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -8278,7 +8278,7 @@ RectTransform:
   m_Children:
   - {fileID: 1906341644}
   m_Father: {fileID: 1133552965}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -8331,7 +8331,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1133552966}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: clickOption
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9161,8 +9161,8 @@ RectTransform:
   - {fileID: 133662678}
   - {fileID: 245803228}
   - {fileID: 820691457}
-  - {fileID: 337708881}
   - {fileID: 400483375}
+  - {fileID: 337708881}
   m_Father: {fileID: 898392331}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9183,7 +9183,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ee69e330479be146a522f59c1157dd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pausePanel: {fileID: 0}
   clickButtonSFX: {fileID: 8300000, guid: 31055e57a0f57814a95f810af6f23325, type: 3}
+  BGM: {fileID: 0}
 --- !u!1 &1221081361
 GameObject:
   m_ObjectHideFlags: 0

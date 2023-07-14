@@ -16,8 +16,8 @@ public class TutorialMenu : MonoBehaviour
     public void nextGame()
     {
         StartCoroutine(endScene());
+        tutorialAnim.SetBool("isOpened", false);
         SoundManager.instance.PlaySound(clickButtonSFX);
-        
     }
 
     IEnumerator startScene()
@@ -28,7 +28,6 @@ public class TutorialMenu : MonoBehaviour
 
     IEnumerator endScene()
     {
-        tutorialAnim.SetBool("isOpened", false);
         yield return new WaitForSeconds(0.5f);
         SceneManager.LoadScene("GameScene");
     }

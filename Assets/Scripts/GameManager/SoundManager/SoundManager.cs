@@ -44,4 +44,14 @@ public class SoundManager : MonoBehaviour
         musicSource.UnPause();
         effectSource.UnPause();
     }
+
+    public void changeVolumeBGM(float value)
+    {
+        musicSource.volume = value;
+    }
+
+    public void changeVolumeSFX(float value)
+    {
+        effectSource.volume = value;
+    }
 }
